@@ -26,14 +26,14 @@ jobs:
       - run: echo '.' > webpack.config.js
       - run: npx webpack
 
-  'e3fa60b':
+  HEAD-1:
     runs-on: ubuntu-latest
     steps: 
       - run: npm install webpack webpack/webpack-cli#e3fa60b1c58726ec208b81149c17144613052874
       - run: echo '.' > webpack.config.js
       - run: npx webpack
 
-  '1cc1fa0':
+  HEAD:
     runs-on: ubuntu-latest
     steps: 
       - run: npm install webpack webpack/webpack-cli#1cc1fa07c59b102364f9c57d379b89e42201dab8
