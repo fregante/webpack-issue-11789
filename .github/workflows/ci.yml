@@ -1,0 +1,9 @@
+name: CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: npm install -g webpack webpack-cli@4
+      - run: echo '.' > webpack.config.js
+      - run: webpack
