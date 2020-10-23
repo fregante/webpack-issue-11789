@@ -1,7 +1,25 @@
 name: CI
 on: [push]
 jobs:
-  build:
+  v1:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: npm install webpack webpack-cli@1
+      - run: echo '.' > webpack.config.js
+      - run: npx webpack
+  v2:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: npm install webpack webpack-cli@2
+      - run: echo '.' > webpack.config.js
+      - run: npx webpack
+  v3:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: npm install webpack webpack-cli@3
+      - run: echo '.' > webpack.config.js
+      - run: npx webpack
+  v4:
     runs-on: ubuntu-latest
     steps: 
       - run: npm install webpack webpack-cli@4
