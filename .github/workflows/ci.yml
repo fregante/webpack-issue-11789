@@ -25,3 +25,10 @@ jobs:
       - run: npm install webpack webpack-cli@4
       - run: echo '.' > webpack.config.js
       - run: npx webpack
+
+  1cc1fa0:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: npm install webpack webpack/webpack-cli#1cc1fa07c59b102364f9c57d379b89e42201dab8
+      - run: echo '.' > webpack.config.js
+      - run: npx webpack
