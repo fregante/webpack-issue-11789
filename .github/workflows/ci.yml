@@ -4,6 +4,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
-      - run: npm install -g webpack webpack-cli@4
+      - run: npm install webpack webpack-cli@4
       - run: echo '.' > webpack.config.js
-      - run: webpack
+      - run: npx webpack
